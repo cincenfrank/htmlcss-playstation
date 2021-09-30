@@ -1,0 +1,20 @@
+.logo-sony {
+  max-width: 100px;
+  display: inline-block;
+  padding: 8px;
+}
+
+nav.custom-navbar .navbar-nav .nav-item {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.custom-block-small {
+  padding: 30px 0px;
+}
+.custom-block-medium {
+  padding: 50px 0;
+}
+.custom-block-large {
+  padding: 70px 0;
+}
