@@ -118,17 +118,18 @@ h5.custom-title {
   border-radius: 25px;
   overflow: hidden;
   padding: 3px;
-  transition: border-color 0.3s ease-in-out;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 .custom-hero-selector-card:hover {
-  border: 2px solid var(--custom-text-grey);
+  transform: translateY(-15px);
 }
 .custom-hero-selector-card-active {
   border: 2px solid var(--custom-text-blue);
 }
-.custom-hero-selector-card-active:hover {
+/* .custom-hero-selector-card-active:hover {
   border: 2px solid var(--custom-text-blue);
-}
+} */
 
 .custom-border-radius {
   border-radius: 20px;
