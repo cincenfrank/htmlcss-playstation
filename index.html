@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header class=" sticky-top shadow">
         <!-- SONY NAV BAR  -->
         <nav class=" container-fluid bg-black text-end">
             <a class="logo-sony" href="#">
@@ -30,7 +30,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+                    <ul class="navbar-nav mb-2 mb-lg-0 align-items-center w-100 gap-2">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="gamesDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -115,12 +115,9 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul> -->
                         </li>
-
-                    </ul>
-                    <div class="d-flex gx-5  ms-auto justify-content-between align-items-center">
-                        <div class="dropdown">
-                            <a class="link-dark text-decoration-none dropdown-toggle " href="#" id="accountDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown ms-auto">
+                            <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 My PlayStation
                             </a>
                             <!-- <ul class="dropdown-menu" aria-labelledby="accountDropdown">
@@ -131,14 +128,19 @@
                                 </li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul> -->
-                        </div>
-                        <div class="">
-                            <button class="btn btn-dark rounded-pill">Accedi</button>
-                        </div>
-                        <div class="">
-                            <img class="w-100" src="img/lens.svg" alt="search icon">
-                        </div>
-                    </div>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn custom-dark-btn rounded-pill">Accedi</button>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a href="#">
+                                <img class="w-50" src="img/lens.svg" alt="search icon">
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <div class="d-flex gx-5  ms-auto justify-content-between align-items-center"> -->
+
+                    <!-- </div> -->
                 </div>
             </div>
         </nav>
@@ -170,40 +172,42 @@
         <!-- HERO SELECTORS SECTION  -->
         <div class=" custom-block-small">
             <div class="container">
-
                 <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6">
-                    <div class="col">
-                        <button class="btn rounded rounded-3 w-100">
-                            <img class="img-fluid" src="img/returnal-listing-thumb-01-ps5.jpg" alt="returnal thumb">
-                        </button>
+                    <div class="col mb-3">
+                        <div class="custom-hero-selector-card custom-hero-selector-card-active">
+                            <img class="img-fluid custom-border-radius " src="img/returnal-listing-thumb-01-ps5.jpg"
+                                alt="returnal thumb">
+                        </div>
                     </div>
-                    <div class="col">
-                        <button class="btn rounded rounded-3 w-100">
-                            <img class="img-fluid" src="img/ratchet-and-clank-rift-apart-keyart.jpg"
-                                alt="ratchet anc clank thumb">
-                        </button>
+                    <div class="col mb-3">
+                        <div class="custom-hero-selector-card">
+                            <img class="img-fluid custom-border-radius"
+                                src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="ratchet anc clank thumb">
+                        </div>
                     </div>
-                    <div class="col">
-                        <button class="btn rounded rounded-3 w-100">
-                            <img class="img-fluid" src="img/returnal-listing-thumb-01-ps5.jpg" alt="returnal thumb">
-                        </button>
+                    <div class="col mb-3">
+                        <div class="custom-hero-selector-card">
+                            <img class="img-fluid custom-border-radius" src="img/returnal-listing-thumb-01-ps5.jpg"
+                                alt="returnal thumb">
+                        </div>
                     </div>
-                    <div class="col">
-                        <button class="btn rounded rounded-3 w-100">
-                            <img class="img-fluid" src="img/ratchet-and-clank-rift-apart-keyart.jpg"
-                                alt="ratchet anc clank thumb">
-                        </button>
+                    <div class="col mb-3">
+                        <div class="custom-hero-selector-card">
+                            <img class="img-fluid custom-border-radius"
+                                src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="ratchet anc clank thumb">
+                        </div>
                     </div>
-                    <div class="col">
-                        <button class="btn rounded rounded-3 w-100">
-                            <img class="img-fluid" src="img/returnal-listing-thumb-01-ps5.jpg" alt="returnal thumb">
-                        </button>
+                    <div class="col mb-3">
+                        <div class="custom-hero-selector-card">
+                            <img class="img-fluid custom-border-radius" src="img/returnal-listing-thumb-01-ps5.jpg"
+                                alt="returnal thumb">
+                        </div>
                     </div>
-                    <div class="col">
-                        <button class="btn rounded rounded-3 w-100">
-                            <img class="img-fluid" src="img/ratchet-and-clank-rift-apart-keyart.jpg"
-                                alt="ratchet anc clank thumb">
-                        </button>
+                    <div class="col mb-3">
+                        <div class="custom-hero-selector-card">
+                            <img class="img-fluid custom-border-radius"
+                                src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="ratchet anc clank thumb">
+                        </div>
                     </div>
 
                 </div>
@@ -240,32 +244,32 @@
             <div class="container">
                 <div class="row row-cols-3 row-cols-md-5">
                     <div class="col">
-                        <div class="custom-selector">
-                            <img class="w-100 px-1" src="img/playstation-5-thumb.png" alt="playstation 5 thumb">
+                        <div class="custom-selector custom-selector-active">
+                            <img class="w-100 px-md-2" src="img/playstation-5-thumb.png" alt="playstation 5 thumb">
                             <p class="d-none d-md-block">Console PS5</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-selector">
-                            <img class="w-100 px-1" src="img/joypad-thumb.png" alt="joypad thumb">
+                            <img class="w-100 px-md-2" src="img/joypad-thumb.png" alt="joypad thumb">
                             <p class="d-none d-md-block">Controller wireless DualSense&trade;</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-selector">
-                            <img class="w-100 px-1" src="img/headset-thumb.png" alt="headset thumb">
+                            <img class="w-100 px-md-2" src="img/headset-thumb.png" alt="headset thumb">
                             <p class="d-none d-md-block">Cuffia wireless con microfono PULSE 3&trade;</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-selector">
-                            <img class="w-100 px-1" src="img/remote-thumb.png" alt="remote thumb">
+                            <img class="w-100 px-md-2" src="img/remote-thumb.png" alt="remote thumb">
                             <p class="d-none d-md-block">Telecomando Media</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="custom-selector">
-                            <img class="w-100 px-1" src="img/camera-thumb.jpg" alt="webcam thumb">
+                            <img class="w-100 px-md-2" src="img/camera-thumb.jpg" alt="webcam thumb">
                             <p class="d-none d-md-block">Telecamera HD</p>
                         </div>
                     </div>
@@ -301,56 +305,62 @@
                     ora</p>
                 <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6 gy-4">
                     <div class="col">
-                        <img class="w-100" src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="tony hawks thumb">
+                        <img class="w-100 custom-border-radius" src="img/tony-hawks-pro-skater-1-2-store-art.jpg"
+                            alt="tony hawks thumb">
                         <p class="custom-text-small">Tony Hawk's&trade; Pro Skater&trade; 1 + 2</p>
                     </div>
                     <div class="col">
-                        <img class="w-100" src="img/crash-bandicoot-4-its-about-time-store-art.jpg"
+                        <img class="w-100 custom-border-radius" src="img/crash-bandicoot-4-its-about-time-store-art.jpg"
                             alt="crash bandicoot thumb">
                         <p class="custom-text-small">Crash Bandicoot 4: It's About Time</p>
                     </div>
                     <div class="col">
-                        <img class="w-100" src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="tony hawks thumb">
+                        <img class="w-100 custom-border-radius" src="img/tony-hawks-pro-skater-1-2-store-art.jpg"
+                            alt="tony hawks thumb">
                         <p class="custom-text-small">Tony Hawk's&trade; Pro Skater&trade; 1 + 2</p>
                     </div>
                     <div class="col">
-                        <img class="w-100" src="img/crash-bandicoot-4-its-about-time-store-art.jpg"
+                        <img class="w-100 custom-border-radius" src="img/crash-bandicoot-4-its-about-time-store-art.jpg"
                             alt="crash bandicoot thumb">
                         <p class="custom-text-small">Crash Bandicoot 4: It's About Time</p>
                     </div>
                     <div class="col">
-                        <img class="w-100" src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="tony hawks thumb">
+                        <img class="w-100 custom-border-radius" src="img/tony-hawks-pro-skater-1-2-store-art.jpg"
+                            alt="tony hawks thumb">
                         <p class="custom-text-small">Tony Hawk's&trade; Pro Skater&trade; 1 + 2</p>
                     </div>
                     <div class="col">
-                        <img class="w-100" src="img/crash-bandicoot-4-its-about-time-store-art.jpg"
+                        <img class="w-100 custom-border-radius" src="img/crash-bandicoot-4-its-about-time-store-art.jpg"
                             alt="crash bandicoot thumb">
                         <p class="custom-text-small">Crash Bandicoot 4: It's About Time</p>
                     </div>
                     <div class="col">
-                        <img class="w-100" src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="tony hawks thumb">
+                        <img class="w-100 custom-border-radius" src="img/tony-hawks-pro-skater-1-2-store-art.jpg"
+                            alt="tony hawks thumb">
                         <p class="custom-text-small">Tony Hawk's&trade; Pro Skater&trade; 1 + 2</p>
                     </div>
                     <div class="col">
-                        <img class="w-100" src="img/crash-bandicoot-4-its-about-time-store-art.jpg"
+                        <img class="w-100 custom-border-radius" src="img/crash-bandicoot-4-its-about-time-store-art.jpg"
                             alt="crash bandicoot thumb">
                         <p class="custom-text-small">Crash Bandicoot 4: It's About Time</p>
                     </div>
                     <div class="col">
-                        <img class="w-100" src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="tony hawks thumb">
+                        <img class="w-100 custom-border-radius" src="img/tony-hawks-pro-skater-1-2-store-art.jpg"
+                            alt="tony hawks thumb">
                         <p class="custom-text-small">Tony Hawk's&trade; Pro Skater&trade; 1 + 2</p>
                     </div>
                     <div class="col">
-                        <img class="w-100" src="img/crash-bandicoot-4-its-about-time-store-art.jpg"
+                        <img class="w-100 custom-border-radius" src="img/crash-bandicoot-4-its-about-time-store-art.jpg"
                             alt="crash bandicoot thumb">
                         <p class="custom-text-small">Crash Bandicoot 4: It's About Time</p>
                     </div>
                     <div class="col">
-                        <img class="w-100" src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="tony hawks thumb">
+                        <img class="w-100 custom-border-radius" src="img/tony-hawks-pro-skater-1-2-store-art.jpg"
+                            alt="tony hawks thumb">
                         <p class="custom-text-small">Tony Hawk's&trade; Pro Skater&trade; 1 + 2</p>
                     </div>
                     <div class="col">
-                        <img class="w-100" src="img/crash-bandicoot-4-its-about-time-store-art.jpg"
+                        <img class="w-100 custom-border-radius" src="img/crash-bandicoot-4-its-about-time-store-art.jpg"
                             alt="crash bandicoot thumb">
                         <p class="custom-text-small">Crash Bandicoot 4: It's About Time</p>
                     </div>
@@ -400,7 +410,7 @@
             <div class="container ">
                 <div class="row align-items-center">
                     <div class="col">
-                        <div class="custom-block-small">
+                        <div class="custom-block-medium py-md-0">
                             <h2 class="custom-title">
                                 <img class=" w-50" src="img/ps-plus-logo.png" alt="ps plus logo">
                             </h2>
@@ -408,7 +418,7 @@
                                 Migliora la tua esperienza PlayStation con l'accesso a multigiocatore online, giochi
                                 mensili, sconti esclusivi e altro ancora.
                             </p>
-                            <button class="btn custom-blue-grey rounded-pill">Esplora PlayStation Plus</button>
+                            <button class="btn custom-grey-btn rounded-pill">Esplora PlayStation Plus</button>
                         </div>
                     </div>
                     <div class="col d-none d-md-block">
@@ -450,11 +460,11 @@
             </div>
         </section>
         <!-- PLAYSTATION NOW BANNER -->
-        <section class=" bg-dark">
+        <section class=" custom-bg-dark-blue">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col">
-                        <div class="custom-block-small">
+                        <div class="custom-block-medium py-md-0">
 
                             <h2 class="custom-title">
                                 <img class=" w-50" src="img/ps-now-logo-two-column.png" alt="ps plus logo">
@@ -464,13 +474,13 @@
                                 e
                                 PS2 su PS4 o su PC Windows, con nuovi titoli aggiunti ogni mese.
                             </p>
-                            <button class="btn custom-blue-grey custom-blue-grey-dark rounded-pill">Esplora PlayStation
+                            <button class="btn custom-grey-btn custom-grey-dark-btn rounded-pill">Esplora
+                                PlayStation
                                 Now</button>
                         </div>
                     </div>
                     <div class="col col d-none d-md-block">
-                        <img class=" w-100" src="img/ps-plus-april-monthly-games-featured-image-block.png"
-                            alt="ps plus logo">
+                        <img class=" w-100" src="img/ps-now-april-featured-image-block.png" alt="ps now april">
                     </div>
                 </div>
             </div>

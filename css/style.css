@@ -111,6 +111,28 @@ h5.custom-title {
   object-fit: cover;
   object-position: top;
 }
+
+.custom-hero-selector-card {
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 3px;
+  transition: border-color 0.3s ease-in-out;
+}
+.custom-hero-selector-card:hover {
+  border: 2px solid var(--custom-text-grey);
+}
+.custom-hero-selector-card-active {
+  border: 2px solid var(--custom-text-blue);
+}
+.custom-hero-selector-card-active:hover {
+  border: 2px solid var(--custom-text-blue);
+}
+
+.custom-border-radius {
+  border-radius: 20px;
+}
 /* .custom-hero-section-returnal {
   background-image: url("../img/jumbo-bg.png");
 } */
@@ -122,10 +144,21 @@ h5.custom-title {
 }
 
 .custom-selector {
+  height: 100%;
   text-align: center;
   border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+  color: var(--custom-text-grey);
+  cursor: pointer;
+}
+.custom-selector-active {
+  border-bottom-color: var(--custom-text-blue);
+  color: var(--custom-text-dark);
 }
 .custom-selector:hover {
+  border-bottom-color: var(--custom-text-grey);
+}
+.custom-selector-active:hover {
   border-bottom-color: var(--custom-text-blue);
 }
 
@@ -133,16 +166,23 @@ h5.custom-title {
   color: var(--custom-text-light);
   background-color: var(--custom-btn-blue);
 }
-.custom-blue-grey {
+.custom-dark-btn {
+  color: var(--custom-text-light);
+  background-color: var(--custom-btn-dark);
+}
+.custom-grey-btn {
   color: var(--custom-text-blue-accent);
   background-color: var(--custom-btn-grey);
 }
-.custom-blue-grey-dark {
+.custom-grey-dark-btn {
   color: var(--custom-text-dark);
 }
 
 .custom-bg-dark-grey {
   background-color: var(--custom-bg-dark-grey);
+}
+.custom-bg-dark-blue {
+  background-color: var(--custom-bg-dark-blue);
 }
 .custom-bg-grey {
   background-color: var(--custom-bg-grey);
