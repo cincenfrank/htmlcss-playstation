@@ -1,35 +1,124 @@
+:root {
+  --custom-padding-title: 30px;
+  --custom-padding-text: 30px;
+  --custom-padding-block-small: 30px;
+  --custom-padding-block-medium: 50px;
+  --custom-padding-block-large: 70px;
+  --custom-text-blue: #0072ce;
+  --custom-text-blue-accent: #2d64e6;
+  --custom-text-light: white;
+  --custom-text-grey: #727272;
+  --custom-text-dark: #1f1f1f;
+  --custom-bg-dark: black;
+  --custom-bg-dark-grey: #1f1f1f;
+  --custom-bg-dark-blue: #161c3b;
+  --custom-bg-blue: #00439c;
+  --custom-bg-grey: #bebcbb;
+  --custom-bg-light: white;
+  --custom-btn-red: #cd3d0f;
+  --custom-btn-blue: #2d64e6;
+  --custom-btn-dark: #363636;
+  --custom-btn-grey: #d9dadc;
+  --custom-btn-light: #f5f5f5;
+  --font-size-xl: 2.5rem;
+  --font-size-l: 2.3rem;
+  --font-size-md: 1.5rem;
+  --font-size-sm: 1.3rem;
+  --font-size-xs: 0.9rem;
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .logo-sony {
   max-width: 100px;
   display: inline-block;
   padding: 8px;
 }
-
 /* nav.custom-navbar .navbar-nav .nav-item {
   padding-left: 8px;
   padding-right: 8px;
 } */
+h2.custom-title {
+  font-size: 2.5rem;
+}
+h3.custom-title {
+  font-size: 2.3rem;
+}
+h4.custom-title {
+  font-size: 1.3rem;
+}
+h5.custom-title {
+  font-size: 0.9rem;
+}
+.custom-hero-logo {
+  padding-bottom: var(--custom-padding-title);
+  display: inline;
+}
+.custom-title {
+  margin-bottom: var(--custom-padding-title);
+  color: var(--custom-text-dark);
+}
+.custom-super {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  color: var(--custom-text-blue);
+}
+.custom-text {
+  margin-bottom: var(--custom-padding-text);
+}
+.custom-text-small {
+  font-size: var(--font-size-xs);
+}
+.custom-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--custom-text-grey);
+}
+.custom-subtitle-big {
+  font-size: var(--font-size-md);
+}
 
 .custom-block-small {
-  padding: 30px 0px;
+  padding-top: var(--custom-padding-block-small);
+  padding-bottom: var(--custom-padding-block-small);
 }
 .custom-block-medium {
-  padding: 50px 0;
+  padding-top: var(--custom-padding-block-medium);
+  padding-bottom: var(--custom-padding-block-medium);
 }
 .custom-block-large {
-  padding: 70px 0;
+  padding-top: var(--custom-padding-block-large);
+  padding-bottom: var(--custom-padding-block-large);
+}
+
+.custom-hero {
+  position: relative;
 }
 
 .custom-hero-section {
-  background-position: top;
-  background-size: cover;
-  min-height: 500px;
   color: white;
 }
-.custom-hero-section-returnal {
-  background-image: url("../img/jumbo-bg.png");
+.custom-hero-section-absolute {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
+.custom-hero-image {
+  min-height: 600px;
+  object-fit: cover;
+  object-position: top;
+}
+/* .custom-hero-section-returnal {
+  background-image: url("../img/jumbo-bg.png");
+} */
 .custom-hero-section-takestwo {
   background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+  background-position: top;
+  background-size: cover;
+  position: relative;
 }
 
 .custom-selector {
@@ -37,5 +126,56 @@
   border-bottom: 2px solid transparent;
 }
 .custom-selector:hover {
-  border-bottom-color: blue;
+  border-bottom-color: var(--custom-text-blue);
+}
+
+.custom-blue-btn {
+  color: var(--custom-text-light);
+  background-color: var(--custom-btn-blue);
+}
+.custom-blue-grey {
+  color: var(--custom-text-blue-accent);
+  background-color: var(--custom-btn-grey);
+}
+.custom-blue-grey-dark {
+  color: var(--custom-text-dark);
+}
+
+.custom-bg-dark-grey {
+  background-color: var(--custom-bg-dark-grey);
+}
+.custom-bg-grey {
+  background-color: var(--custom-bg-grey);
+}
+.custom-bg-blue {
+  background-color: var(--custom-btn-blue);
+  color: var(--custom-text-light);
+}
+.custom-bg-red {
+  background-color: var(--custom-btn-red);
+  color: var(--custom-text-light);
+}
+.custom-footer-list {
+  list-style: none;
+}
+.custom-footer-list-link {
+  color: var(--custom-text-light);
+  padding-top: 8px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: var(--font-size-xs);
+}
+.custom-footer-link {
+  color: var(--custom-text-light);
+}
+.custom-footer-svg {
+  filter: brightness(0) invert(1);
+  width: 100px;
+}
+.custom-footer-svg-sea {
+  width: 150px;
+}
+.custom-footer-language-logo {
+  width: 15px;
+  margin-right: 10px;
 }
