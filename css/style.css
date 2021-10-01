@@ -34,20 +34,33 @@
   display: inline-block;
   padding: 8px;
 }
-/* nav.custom-navbar .navbar-nav .nav-item {
-  padding-left: 8px;
-  padding-right: 8px;
-} */
-h2.custom-title {
+nav.custom-navbar .navbar-nav .nav-item .nav-link {
+  color: var(--custom-text-dark);
+  transition: color 0.3s;
+}
+nav.custom-navbar .navbar-nav .nav-item:hover .nav-link {
+  color: var(--custom-text-blue-accent);
+}
+nav.custom-navbar .nav-link.custom-dropdown-toggle::after {
+  content: url(../img/chevron-down-solid.svg);
+  width: 10px;
+  /* height: 10px; */
+  vertical-align: middle;
+  display: inline-block;
+}
+nav.custom-navbar .nav-item:hover .nav-link.custom-dropdown-toggle::after {
+  content: url(../img/chevron-down-solid-hover.svg);
+}
+h2 {
   font-size: 2.5rem;
 }
-h3.custom-title {
+h3 {
   font-size: 2.3rem;
 }
-h4.custom-title {
+h4 {
   font-size: 1.3rem;
 }
-h5.custom-title {
+h5 {
   font-size: 0.9rem;
 }
 .custom-hero-logo {
