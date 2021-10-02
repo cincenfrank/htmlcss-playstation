@@ -184,16 +184,11 @@ h5 {
 .custom-hero-selector-card-active {
   border: 2px solid var(--custom-text-blue);
 }
-/* .custom-hero-selector-card-active:hover {
-  border: 2px solid var(--custom-text-blue);
-} */
 
 .custom-border-radius {
   border-radius: 20px;
 }
-/* .custom-hero-section-returnal {
-  background-image: url("../img/jumbo-bg.png");
-} */
+
 .custom-hero-section-takestwo {
   background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
   background-position: top;
