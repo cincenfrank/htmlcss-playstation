@@ -44,12 +44,16 @@ nav.custom-navbar .navbar-nav > .nav-item:hover > .nav-link {
 nav.custom-navbar .nav-link.custom-dropdown-toggle::after {
   content: url(../img/chevron-down-solid.svg);
   width: 10px;
-  /* height: 10px; */
   vertical-align: middle;
   display: inline-block;
+  transition: transform 0.3s 0.3s;
 }
 nav.custom-navbar .nav-item:hover .nav-link.custom-dropdown-toggle::after {
   content: url(../img/chevron-down-solid-hover.svg);
+}
+nav.custom-navbar .custom-dropdown-toggle:focus::after {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
 }
 
 nav.custom-navbar .custom-dropdown {
@@ -175,7 +179,7 @@ h5 {
   transition: transform 0.3s ease-in-out;
 }
 .custom-hero-selector-card:hover {
-  transform: translateY(-15px);
+  transform: translateY(-10px);
 }
 .custom-hero-selector-card-active {
   border: 2px solid var(--custom-text-blue);
@@ -309,6 +313,10 @@ h5 {
   display: inline-block;
   text-decoration: none;
   font-size: var(--font-size-xs);
+}
+.custom-footer-list-link:hover {
+  color: var(--custom-text-light);
+  text-decoration: underline;
 }
 .custom-footer-link {
   color: var(--custom-text-light);
