@@ -295,7 +295,7 @@ h5 {
   background-color: var(--custom-bg-grey);
 }
 .custom-bg-blue {
-  background-color: var(--custom-btn-blue);
+  background-color: var(--custom-bg-blue);
   color: var(--custom-text-light);
 }
 
