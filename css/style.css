@@ -272,10 +272,10 @@ h5 {
 .custom-grey-dark-btn {
   color: var(--custom-bg-dark-blue);
 }
-.custom-grey-btn:hover {
+.custom-grey-dark-btn:hover {
   color: var(--custom-bg-dark-blue);
 }
-.custom-grey-btn:hover::before {
+.custom-grey-dark-btn:hover::before {
   border-color: var(--custom-bg-dark-blue);
 }
 .custom-red-btn {
