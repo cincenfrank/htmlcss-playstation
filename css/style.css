@@ -34,11 +34,11 @@
   display: inline-block;
   padding: 8px;
 }
-nav.custom-navbar .navbar-nav .nav-item .nav-link {
+nav.custom-navbar .navbar-nav > .nav-item > .nav-link {
   color: var(--custom-text-dark);
   transition: color 0.3s;
 }
-nav.custom-navbar .navbar-nav .nav-item:hover .nav-link {
+nav.custom-navbar .navbar-nav > .nav-item:hover > .nav-link {
   color: var(--custom-text-blue-accent);
 }
 nav.custom-navbar .nav-link.custom-dropdown-toggle::after {
@@ -51,6 +51,46 @@ nav.custom-navbar .nav-link.custom-dropdown-toggle::after {
 nav.custom-navbar .nav-item:hover .nav-link.custom-dropdown-toggle::after {
   content: url(../img/chevron-down-solid-hover.svg);
 }
+
+nav.custom-navbar .custom-dropdown {
+  position: initial;
+}
+
+.custom-dropdown-menu {
+  max-height: 0px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  transition: all 0.3s 0.4s;
+}
+.custom-dropdown-menu .card {
+  transition: border-color 0.3s;
+  opacity: 0;
+  transition: opacity 0.3s 0.2s;
+}
+.custom-dropdown-menu .card:hover {
+  cursor: pointer;
+  border-color: var(--custom-text-blue-accent);
+}
+.custom-dropdown-menu .nav-item {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.custom-dropdown-toggle:focus ~ .custom-dropdown-menu {
+  max-height: 500px;
+  transition: all 0.3s;
+}
+.custom-dropdown-toggle:focus ~ .custom-dropdown-menu .card {
+  opacity: 1;
+  transition: opacity 0.3s 0.1s;
+}
+.custom-dropdown-toggle:focus ~ .custom-dropdown-menu .nav-item {
+  opacity: 1;
+  transition: opacity 0.3s 0.2s;
+}
+
 h2 {
   font-size: 2.5rem;
 }
