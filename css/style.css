@@ -176,6 +176,29 @@ h5 {
   border-bottom-color: var(--custom-text-blue);
 }
 
+.custom-btn {
+  position: relative;
+  transition: opacity 0.3s;
+}
+.custom-btn::before {
+  content: "";
+  border: 2px solid transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50rem;
+  transform: scale(0.99);
+  transition: border-color 0.3s ease-in-out;
+}
+.custom-btn:hover {
+  opacity: 0.85;
+  color: var(--custom-text-light);
+}
+.custom-btn:hover::before {
+  border-color: white;
+}
 .custom-blue-btn {
   color: var(--custom-text-light);
   background-color: var(--custom-btn-blue);
@@ -188,10 +211,26 @@ h5 {
   color: var(--custom-text-blue-accent);
   background-color: var(--custom-btn-grey);
 }
+.custom-grey-btn:hover {
+  color: var(--custom-text-blue-accent);
+}
 .custom-grey-dark-btn {
-  color: var(--custom-text-dark);
+  color: var(--custom-bg-dark-blue);
+}
+.custom-grey-btn:hover {
+  color: var(--custom-bg-dark-blue);
+}
+.custom-grey-btn:hover::before {
+  border-color: var(--custom-bg-dark-blue);
+}
+.custom-red-btn {
+  background-color: var(--custom-btn-red);
+  color: var(--custom-text-light);
 }
 
+.custom-red-btn:hover::before {
+  border-color: var(--custom-text-dark);
+}
 .custom-bg-dark-grey {
   background-color: var(--custom-bg-dark-grey);
 }
@@ -205,10 +244,7 @@ h5 {
   background-color: var(--custom-btn-blue);
   color: var(--custom-text-light);
 }
-.custom-bg-red {
-  background-color: var(--custom-btn-red);
-  color: var(--custom-text-light);
-}
+
 .custom-footer-list {
   list-style: none;
 }
