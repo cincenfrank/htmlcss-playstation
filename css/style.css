@@ -88,11 +88,11 @@ nav.custom-navbar .custom-dropdown {
 }
 .custom-dropdown-toggle:focus ~ .custom-dropdown-menu .card {
   opacity: 1;
-  transition: opacity 0.3s 0.1s;
+  transition: opacity 0.3s 0.2s;
 }
 .custom-dropdown-toggle:focus ~ .custom-dropdown-menu .nav-item {
   opacity: 1;
-  transition: opacity 0.3s 0.2s;
+  transition: opacity 0.3s 0.3s;
 }
 
 h2 {
