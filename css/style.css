@@ -165,12 +165,27 @@ h5 {
   color: var(--custom-text-grey);
   cursor: pointer;
 }
+.custom-selector-image {
+  opacity: 0.5;
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+.custom-selector > p {
+  transition: color 0.3s;
+}
 .custom-selector-active {
   border-bottom-color: var(--custom-text-blue);
   color: var(--custom-text-dark);
 }
+.custom-selector-active > .custom-selector-image {
+  opacity: 1;
+}
+
 .custom-selector:hover {
-  border-bottom-color: var(--custom-text-grey);
+  color: var(--custom-text-dark);
+}
+.custom-selector:hover > .custom-selector-image {
+  opacity: 1;
 }
 .custom-selector-active:hover {
   border-bottom-color: var(--custom-text-blue);
