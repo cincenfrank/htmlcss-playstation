@@ -181,6 +181,9 @@ h5 {
 .custom-hero-selector-card:hover {
   transform: translateY(-10px);
 }
+.custom-hero-selector-card:active {
+  animation: selection-animation 1s;
+}
 .custom-hero-selector-card-active {
   border: 2px solid var(--custom-text-blue);
 }
@@ -326,4 +329,22 @@ h5 {
 .custom-footer-language-logo {
   width: 15px;
   margin-right: 10px;
+}
+
+@keyframes selection-animation {
+  0% {
+    transform: translateY(-10px);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
