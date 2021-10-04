@@ -267,6 +267,9 @@ nav.custom-navbar .custom-dropdown-toggle:focus::after {
 .custom-footer-link {
   color: var(--custom-text-light);
 }
+.custom-footer-link:hover {
+  color: var(--custom-bg-grey);
+}
 .custom-footer-svg {
   filter: brightness(0) invert(1);
   width: 100px;
